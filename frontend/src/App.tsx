@@ -1,9 +1,6 @@
-function App() {
+import Header from "./components/header"
+export default function App() {
   return (
-    <div>
-      <p className='text-lg text-purple-500'>a</p>
-    </div>
+    <Header />
   )
 }
-
-export default App
