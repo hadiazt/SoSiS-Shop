@@ -55,13 +55,13 @@ export default function Header() {
                   </div>
                 </div>
               </div>
-              <div className="hidden sm:ml-6 sm:block absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              <div className="hidden sm:block absolute inset-y-0 right-0 items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 {navigation.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}
                     className={
-                      "relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white bg-gray-900 text-white m-2"
+                      "relative inline-flex items-center justify-center rounded-md p-2  hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white bg-gray-900 text-white m-2"
                     }
                   >
                     {<item.icon className="h-6 w-6" aria-hidden="true" />}
