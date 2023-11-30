@@ -21,7 +21,7 @@ const navigation = [
   },
 ];
 
-export default function Header() {
+export const Header = () => {
   return (
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
@@ -98,4 +98,4 @@ export default function Header() {
       )}
     </Disclosure>
   );
-}
+};
