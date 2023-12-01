@@ -17,8 +17,7 @@ export const products = [
         Des: "ATX"
       }
     ],
-    warranty: 0,
-    seller: 'X'
+    warranty: 0
   },
   {
     _id: '2',
@@ -33,8 +32,7 @@ export const products = [
     rating: 4.0,
     numReviews: 8,
     features: [],
-    warranty: 0,
-    seller: 'X'
+    warranty: 0
   },
   {
     _id: '3',
@@ -49,8 +47,7 @@ export const products = [
     rating: 3,
     numReviews: 12,
     features: [],
-    warranty: 0,
-    seller: 'X'
+    warranty: 0
   },
   {
     _id: '4',
@@ -65,8 +62,7 @@ export const products = [
     rating: 5,
     numReviews: 12,
     features: [],
-    warranty: 0,
-    seller: 'X'
+    warranty: 0
   },
   {
     _id: '5',
@@ -81,8 +77,7 @@ export const products = [
     rating: 3.5,
     numReviews: 10,
     features: [],
-    warranty: 0,
-    seller: 'X'
+    warranty: 0
   },
   {
     _id: '6',
@@ -97,7 +92,6 @@ export const products = [
     rating: 4,
     numReviews: 12,
     features: [],
-    warranty: 0,
-    seller: 'X'
+    warranty: 0
   },
 ]
