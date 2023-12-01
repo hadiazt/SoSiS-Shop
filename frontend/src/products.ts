@@ -11,6 +11,14 @@ export const products = [
     countInStock: 10,
     rating: 4.5,
     numReviews: 12,
+    features: [
+      {
+        Name: "Factor",
+        Des: "ATX"
+      }
+    ],
+    warranty: 0,
+    seller: 'X'
   },
   {
     _id: '2',
@@ -24,6 +32,9 @@ export const products = [
     countInStock: 7,
     rating: 4.0,
     numReviews: 8,
+    features: [],
+    warranty: 0,
+    seller: 'X'
   },
   {
     _id: '3',
@@ -37,6 +48,9 @@ export const products = [
     countInStock: 5,
     rating: 3,
     numReviews: 12,
+    features: [],
+    warranty: 0,
+    seller: 'X'
   },
   {
     _id: '4',
@@ -50,6 +64,9 @@ export const products = [
     countInStock: 11,
     rating: 5,
     numReviews: 12,
+    features: [],
+    warranty: 0,
+    seller: 'X'
   },
   {
     _id: '5',
@@ -63,6 +80,9 @@ export const products = [
     countInStock: 7,
     rating: 3.5,
     numReviews: 10,
+    features: [],
+    warranty: 0,
+    seller: 'X'
   },
   {
     _id: '6',
@@ -76,5 +96,8 @@ export const products = [
     countInStock: 0,
     rating: 4,
     numReviews: 12,
+    features: [],
+    warranty: 0,
+    seller: 'X'
   },
 ]
