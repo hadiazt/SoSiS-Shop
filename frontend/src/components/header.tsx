@@ -1,24 +1,20 @@
 // import { Fragment } from "react";
 import { Disclosure } from "@headlessui/react";
-import {
-  Bars3Icon,
-  BellIcon,
-  ShoppingCartIcon,
-  UserIcon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
+
+import { HiOutlineUser, HiShoppingCart } from "react-icons/hi";
+import { HiBars3, HiMiniXMark, HiMiniBell } from "react-icons/hi2";
 
 const navigation = [
   {
     name: "Login",
     href: "/login",
-    icon: UserIcon,
+    icon: HiOutlineUser,
   },
   {
     name: "Cart",
     href: "/cart",
-    icon: ShoppingCartIcon,
+    icon: HiShoppingCart,
   },
 ];
 
@@ -35,9 +31,9 @@ export const Header = () => {
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   {open ? (
-                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                    <HiMiniXMark className="block h-6 w-6" aria-hidden="true" />
                   ) : (
-                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                    <HiBars3 className="block h-6 w-6" aria-hidden="true" />
                   )}
                 </Disclosure.Button>
               </div>
@@ -75,7 +71,7 @@ export const Header = () => {
                 >
                   <span className="absolute -inset-1.5" />
                   <span className="sr-only">View notifications</span>
-                  <BellIcon className="h-6 w-6" aria-hidden="true" />
+                  <HiMiniBell className="h-6 w-6" aria-hidden="true" />
                 </button>
               </div>
             </div>
