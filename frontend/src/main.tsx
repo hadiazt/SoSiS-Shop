@@ -6,7 +6,7 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import App from "./App.tsx";
+import App from "./App";
 import "./index.css";
 import { HomeScreen } from "./screens/HomeScreen";
 
