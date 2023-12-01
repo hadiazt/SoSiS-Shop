@@ -7,6 +7,7 @@ import {
   UserIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
 
 const navigation = [
   {
@@ -57,16 +58,16 @@ export const Header = () => {
               </div>
               <div className="hidden sm:block absolute inset-y-0 right-0 items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 {navigation.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
-                    href={item.href}
+                    to={item.href}
                     className={
                       "relative inline-flex items-center justify-center rounded-md p-2  hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white bg-gray-900 text-white m-2"
                     }
                   >
                     {<item.icon className="h-6 w-6" aria-hidden="true" />}
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
                 <button
                   type="button"

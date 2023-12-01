@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { products } from "../products";
 
 export const Product = () => {
@@ -20,10 +21,10 @@ export const Product = () => {
               <div className="mt-4 flex justify-between">
                 <div>
                   <h3 className="text-sm text-gray-700">
-                    <a href={`/product/${product._id}`}>
+                    <Link to={`/product/${product._id}`}>
                       <span aria-hidden="true" className="absolute inset-0" />
                       {product.name}
-                    </a>
+                    </Link>
                   </h3>
                   <p className="mt-1 text-sm text-gray-500">
                     {product.category}
