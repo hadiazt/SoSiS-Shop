@@ -16,3 +16,4 @@
 - Using Typescript 
 - Using Vite
 - Using tailwind
+- Whole Redesign
