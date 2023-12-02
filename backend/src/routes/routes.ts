@@ -1,5 +1,5 @@
 import { DB } from '../db/connector';
-import { ProductRouter } from './products';
+import { ProductRouter } from './ProductRouter';
 const BaseURL = process.env.BaseURL;
 
 export const Routes = (app: { get: Function, use: Function }) => {
