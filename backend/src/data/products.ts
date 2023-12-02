@@ -93,4 +93,5 @@ export const products = [
     NumReviews: 12,
     Features: [],
     Warranty: 0
-  },
+  }
+]
