@@ -9,7 +9,7 @@ export const Product = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       const { data } = await axios.get("http://localhost:3000/api/v1/product/");
-      setProducts(data);
+      setProducts(data.Data);      
     };
     fetchProducts();
   }, []);

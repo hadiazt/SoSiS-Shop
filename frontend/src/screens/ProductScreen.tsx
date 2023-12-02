@@ -21,7 +21,7 @@ export const ProductScreen = () => {
       "http://localhost:3000/api/v1/product/" + ProductID
     );
 
-    setProduct(data);
+    setProduct(data.Data);
   };
 
   useLayoutEffect(() => {

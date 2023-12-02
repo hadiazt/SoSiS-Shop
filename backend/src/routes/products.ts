@@ -23,13 +23,4 @@ ProductRouter.get('/:id', asyncHandler(async (req: { params: { id: String } }, r
             Data: Product
         });
     }
-
-
-
-
-
-
-
-
-
 }));
