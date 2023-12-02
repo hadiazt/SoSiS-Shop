@@ -4,10 +4,10 @@ const BaseURL = process.env.BaseURL;
 
 export const Routes = (app: { get: Function, use: Function }) => {
     DB()
-    
+
     app.get(BaseURL + '/', require('./get/index'));
 
-    app.use(BaseURL + '/product', ProductRouter);
+    app.use(BaseURL + '/product', ProductRouter)
 
 
     // console.log(BaseURL);

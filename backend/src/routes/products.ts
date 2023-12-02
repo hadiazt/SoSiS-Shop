@@ -15,12 +15,20 @@ ProductRouter.get('/:id', asyncHandler(async (req: { params: { id: String } }, r
     const ID = req.params.id
     const Product = await ProductModel.findById(ID)
 
-    if (!Product) return res.status(404).json({ Code: 404, Message: "Item Not Found" });
+    if (!Product) {
+        res.status(404); throw new Error("Item Not Found")
+    } else {
+        return res.status(200).json({
+            Code: 200,
+            Data: Product
+        });
+    }
 
-    return res.status(200).json({
-        Code: 200,
-        Data: Product
-    });
+
+
+
+
+
 
 
 
