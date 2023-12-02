@@ -1,7 +1,8 @@
 import { useParams, Link } from "react-router-dom";
 import { Rating } from "../components/Rating";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
-import { products } from "../products";
 import {
   HiMiniCheckBadge,
   HiBuildingStorefront,
@@ -11,8 +12,20 @@ import {
 } from "react-icons/hi2";
 
 export const ProductScreen = () => {
+  const [Product, setProduct] = useState({});
   const { id: ProductID } = useParams();
-  const Product = products.find((p: { _id: string }) => p._id === ProductID);
+
+  useEffect(() => {
+    const fetchProduct = async () => {
+      const { data } = await axios.get(
+        "http://localhost:3000/api/v1/product/" + ProductID
+      );
+      setProduct(data);
+    };
+    fetchProduct();
+  }, [ProductID]);
+
+  // const Product = products.find((p: { _id: string }) => p._id === ProductID);
 
   return (
     <>
