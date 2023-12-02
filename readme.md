@@ -17,3 +17,4 @@
 - Using Vite
 - Using tailwind
 - Whole Redesign
+- Better Running
