@@ -22,13 +22,14 @@ export const ProductScreen = () => {
       );
       setProduct(data);
     };
-    fetchProduct();
+    fetchProduct()
   }, [ProductID]);
 
   // const Product = products.find((p: { _id: string }) => p._id === ProductID);
 
   return (
     <>
+      {console.log(Product)}
       <div className="mx-auto p-10 lg:max-w-full">
         <div className="mb-7">
           <Link
