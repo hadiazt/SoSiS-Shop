@@ -2,7 +2,7 @@ import RateLimit from 'express-rate-limit';
 import express from 'express';
 import cors from 'cors';
 import 'dotenv/config';
-import { Routes } from './routes';
+import { Routes } from './routes/routes';
 
 const PORT = process.env.PORT;
 const app = express();
