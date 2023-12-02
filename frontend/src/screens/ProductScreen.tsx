@@ -1,7 +1,8 @@
 import { useParams, Link } from "react-router-dom";
 import { Rating } from "../components/Rating";
-import { useEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import axios from "axios";
+import { ProductInfo } from "../types/products";
 
 import {
   HiMiniCheckBadge,
@@ -12,24 +13,25 @@ import {
 } from "react-icons/hi2";
 
 export const ProductScreen = () => {
-  const [Product, setProduct] = useState({});
+  const [Product, setProduct] = useState<ProductInfo>();
   const { id: ProductID } = useParams();
 
-  useEffect(() => {
-    const fetchProduct = async () => {
-      const { data } = await axios.get(
-        "http://localhost:3000/api/v1/product/" + ProductID
-      );
-      setProduct(data);
-    };
-    fetchProduct()
+  const fetchProduct = async () => {
+    const { data } = await axios.get(
+      "http://localhost:3000/api/v1/product/" + ProductID
+    );
+
+    setProduct(data);
+  };
+
+  useLayoutEffect(() => {
+    fetchProduct();
   }, [ProductID]);
 
   // const Product = products.find((p: { _id: string }) => p._id === ProductID);
 
   return (
     <>
-      {console.log(Product)}
       <div className="mx-auto p-10 lg:max-w-full">
         <div className="mb-7">
           <Link
@@ -119,11 +121,11 @@ export const ProductScreen = () => {
             {/* Features & Des */}
             <div>
               <div className="pl-4 mt-5">
-                {Product?.features[0] && (
-                  <p className="font-medium text-xl mt-5">Features</p>
+                {Product?.features && Product?.features.length > 0 && (
+                  <p className="font-medium text-xl mt-5">Features :</p>
                 )}
                 <ul>
-                  {Product?.features.map(
+                  {Product?.features?.map(
                     (item: { Name: string; Des: string }) => (
                       <>
                         <li className="mt-2 ml-2">
@@ -136,9 +138,7 @@ export const ProductScreen = () => {
                     )
                   )}
                 </ul>
-                {Product?.features[0] && (
-                  <div className="border-t-2 border-gray-300 border-solid mb-4 mt-4"></div>
-                )}
+
                 <p className="max-w-screen-sm ">{Product?.description}</p>
               </div>
             </div>
