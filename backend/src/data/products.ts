@@ -1,6 +1,5 @@
 export const products = [
   {
-    _id: '1',
     Name: 'Airpods Wireless Bluetooth Headphones',
     IMG: '/images/airpods.jpg',
     Description:
@@ -20,7 +19,6 @@ export const products = [
     Warranty: 0
   },
   {
-    _id: '2',
     Name: 'iPhone 11 Pro 256GB Memory',
     IMG: '/images/phone.jpg',
     Description:
@@ -35,7 +33,6 @@ export const products = [
     Warranty: 0
   },
   {
-    _id: '3',
     Name: 'Cannon EOS 80D DSLR Camera',
     IMG: '/images/camera.jpg',
     Description:
@@ -50,7 +47,6 @@ export const products = [
     Warranty: 0
   },
   {
-    _id: '4',
     Name: 'Sony Playstation 4 Pro White Version',
     IMG: '/images/playstation.jpg',
     Description:
@@ -65,7 +61,6 @@ export const products = [
     Warranty: 0
   },
   {
-    _id: '5',
     Name: 'Logitech G-Series Gaming Mouse',
     IMG: '/images/mouse.jpg',
     Description:
@@ -80,7 +75,6 @@ export const products = [
     Warranty: 0
   },
   {
-    _id: '6',
     Name: 'Amazon Echo Dot 3rd Generation',
     IMG: '/images/alexa.jpg',
     Description:
