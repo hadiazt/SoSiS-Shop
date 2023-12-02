@@ -48,7 +48,7 @@ export const ProductScreen = () => {
             {/* Image */}
             <div className="max-w-md">
               <img
-                src={Product?.image}
+                src={Product?.IMG}
                 className="h-full w-full object-cover object-center lg:h-full lg:w-full rounded-3xl"
               />
             </div>
@@ -56,41 +56,41 @@ export const ProductScreen = () => {
             {/* Name & ... */}
             <div className="pl-5">
               <div className="border-2 rounded-xl mt-5 ml-auto">
-                <p className="font-medium text-2xl">{Product?.name}</p>
+                <p className="font-medium text-2xl">{Product?.Name}</p>
                 <Rating
-                  Rate={Product?.rating || 0}
-                  Review={Product?.numReviews || 0}
+                  Rate={Product?.Rating || 0}
+                  Review={Product?.NumReviews || 0}
                 />
                 <div className="border-t-2 border-gray-300 border-solid mb-4 mt-4"></div>
                 <p className="flex items-center text-2xl m-2">
                   <HiMiniBanknotes />
-                  <span className="-mt-1 ml-3">{Product?.price}$</span>
+                  <span className="-mt-1 ml-3">{Product?.Price}$</span>
                 </p>
                 <p className="flex items-center text-2xl m-2">
-                  {Product?.countInStock || 0 > 0 ? (
+                  {Product?.CountInStock || 0 > 0 ? (
                     <HiShoppingCart />
                   ) : (
                     <HiMiniXMark />
                   )}
                   <span className="-mt-1 ml-3">
-                    {Product?.countInStock || 0 > 0
-                      ? Product?.countInStock + " In Stock"
+                    {Product?.CountInStock || 0 > 0
+                      ? Product?.CountInStock + " In Stock"
                       : "Out Of Stock"}
                   </span>
                 </p>
                 <p className="flex items-center text-2xl m-2">
                   <HiMiniCheckBadge />
                   <span className="-mt-1 ml-3">
-                    {Product?.warranty} Month Warranty
+                    {Product?.Warranty} Month Warranty
                   </span>
                 </p>
                 <p className="flex items-center text-2xl m-2">
                   <HiBuildingStorefront />
-                  <span className="-mt-1 ml-3">{Product?.brand}</span>
+                  <span className="-mt-1 ml-3">{Product?.Brand}</span>
                 </p>
 
                 <div className="border-t-2 border-gray-300 border-solid mb-4 mt-4"></div>
-                {Product?.countInStock || 0 > 0 ? (
+                {Product?.CountInStock || 0 > 0 ? (
                   <Link
                     style={{ background: "#202D47" }}
                     className="flex items-center justify-center rounded-md border border-transparent p-2 text-base font-medium text-white w-full"
@@ -121,11 +121,11 @@ export const ProductScreen = () => {
             {/* Features & Des */}
             <div>
               <div className="pl-4 mt-5">
-                {Product?.features && Product?.features.length > 0 && (
+                {Product?.Features && Product?.Features.length > 0 && (
                   <p className="font-medium text-xl mt-5">Features :</p>
                 )}
                 <ul>
-                  {Product?.features?.map(
+                  {Product?.Features?.map(
                     (item: { Name: string; Des: string }) => (
                       <>
                         <li className="mt-2 ml-2">
@@ -139,7 +139,7 @@ export const ProductScreen = () => {
                   )}
                 </ul>
 
-                <p className="max-w-screen-sm ">{Product?.description}</p>
+                <p className="max-w-screen-sm ">{Product?.Description}</p>
               </div>
             </div>
           </div>
