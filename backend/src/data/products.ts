@@ -2,7 +2,7 @@ export const products = [
   {
     _id: '1',
     Name: 'Airpods Wireless Bluetooth Headphones',
-    IMG: '/IMGs/airpods.jpg',
+    IMG: '/images/airpods.jpg',
     Description:
       'Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working',
     Brand: 'Apple',
@@ -22,7 +22,7 @@ export const products = [
   {
     _id: '2',
     Name: 'iPhone 11 Pro 256GB Memory',
-    IMG: '/IMGs/phone.jpg',
+    IMG: '/images/phone.jpg',
     Description:
       'Introducing the iPhone 11 Pro. A transformative triple-camera system that adds tons of capability without complexity. An unprecedented leap in battery life',
     Brand: 'Apple',
@@ -37,7 +37,7 @@ export const products = [
   {
     _id: '3',
     Name: 'Cannon EOS 80D DSLR Camera',
-    IMG: '/IMGs/camera.jpg',
+    IMG: '/images/camera.jpg',
     Description:
       'Characterized by versatile imaging specs, the Canon EOS 80D further clarifies itself using a pair of robust focusing systems and an intuitive design',
     Brand: 'Cannon',
@@ -52,7 +52,7 @@ export const products = [
   {
     _id: '4',
     Name: 'Sony Playstation 4 Pro White Version',
-    IMG: '/IMGs/playstation.jpg',
+    IMG: '/images/playstation.jpg',
     Description:
       'The ultimate home entertainment center starts with PlayStation. Whether you are into gaming, HD movies, television, music',
     Brand: 'Sony',
@@ -67,7 +67,7 @@ export const products = [
   {
     _id: '5',
     Name: 'Logitech G-Series Gaming Mouse',
-    IMG: '/IMGs/mouse.jpg',
+    IMG: '/images/mouse.jpg',
     Description:
       'Get a better handle on your games with this Logitech LIGHTSYNC gaming mouse. The six programmable buttons allow customization for a smooth playing experience',
     Brand: 'Logitech',
@@ -82,7 +82,7 @@ export const products = [
   {
     _id: '6',
     Name: 'Amazon Echo Dot 3rd Generation',
-    IMG: '/IMGs/alexa.jpg',
+    IMG: '/images/alexa.jpg',
     Description:
       'Meet Echo Dot - Our most popular smart speaker with a fabric design. It is our most compact smart speaker that fits perfectly into small space',
     Brand: 'Amazon',
@@ -94,4 +94,3 @@ export const products = [
     Features: [],
     Warranty: 0
   },
-]
