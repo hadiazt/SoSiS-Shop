@@ -1,5 +1,8 @@
-import { products } from './data/products'
+import { products } from './data/products';
+import { DB } from './db/connector';
+
 export const Routes = (app: { get: Function }) => {
+    DB()
     app.get('/api/v1', (req, res) => {
         res.send('Hello World!');
     });

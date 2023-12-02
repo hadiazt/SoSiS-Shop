@@ -6,6 +6,7 @@ import { Routes } from './routes';
 
 const PORT = process.env.PORT;
 const app = express();
+
 app.use(cors());
 Routes(app)
 app.listen(PORT, () => {
