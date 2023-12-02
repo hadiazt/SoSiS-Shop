@@ -28,8 +28,6 @@ export const ProductScreen = () => {
     fetchProduct();
   }, [ProductID]);
 
-  // const Product = products.find((p: { _id: string }) => p._id === ProductID);
-
   return (
     <>
       <div className="mx-auto p-10 lg:max-w-full">
